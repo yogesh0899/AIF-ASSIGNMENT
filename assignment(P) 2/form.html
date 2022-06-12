@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            background-color: rgb(183, 189, 189);
+        }
+        table,
+        thead {
+            border: 1px solid black;
+            border-collapse: seprate;
+
+        }
+
+        
+        td {
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+
+        th {
+            border: 1px solid black;
+            border-collapse: separate;
+            text-align: left;
+        }
+    </Style>
+</head>
+
+<body>
+    <form action="">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th colspan="2">
+                        <h2 style="text-align: center;">Job Application Form</h2>
+                    </th>
+                </tr>
+
+
+            </thead>
+            <tbody>
+
+                </tr>
+                <th colspan="2">
+                    Personal details
+                </th>
+                </tr>
+                <tr>
+                    <div>
+                        <th>First Name</th>
+                        <td><input type="text" name="First name" id="First Name" placeholder="enter first name"></td>
+                    </div>
+
+                </tr>
+                <tr>
+                    <div>
+                        <th>Last Name</th>
+                        <td><input type="text" name="Last Name" id="Last Name" placeholder="enter last name"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <th> Date of birth</th>
+                    <td><input type="date" name="DOB" id="DOB"></td>
+                </tr>
+                <tr>
+                    <th>Select your Gender</th>
+                    <td> <input type="radio" name="Gender" id="Male"> Male <input type="radio" name="Gender"
+                            id="Female">Female
+                        <input type="radio" name="Gender" id="Other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Job Details
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Job title you are applying for </th>
+                    <td>
+                        <input list="Jobs" name="Job" id="Job" placeholder="select job profile">
+                        <datalist id="Jobs">
+                            <option value="Fronted Developer">
+                            <option value=" Backend Developer ">
+                            <option value=" Fullstack Web Developer">
+                            <option value=" Data Analyst">
+
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select your preferred areas of positing</th>
+                    <td>
+                        <input type="checkbox" name="Location1" id="Place1">
+                        <label for="Place1">Chennai</label>
+                        <input type="checkbox" name="Location2" id="Place2">
+                        <label for="Place2">Banglore</label>
+                        <input type="checkbox" name="Location3" id="Place3">
+                        <label for="Place3">Hyderabad</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="expertise"> Describe your technical expertise </label>
+                    </th>
+                    <td>
+                        <textarea name="expertise" id="expertise" cols="50" rows="4">Enter your text here</textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
